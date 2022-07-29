@@ -16,10 +16,10 @@
   ],
 
   "dict": {
-    
-    "Scorpius":"天蝎座",
-    "Aegis":"圣盾动力",
+    "Aegis": "圣盾动力",
+    "Scorpius": "天蝎座",
+    "Anvil": "铁砧航天",
     "Anvil":"铁砧航天",
-    "Argo":"南船座宇航"
+    "Argo": "南船座宇航"
   }
 }
