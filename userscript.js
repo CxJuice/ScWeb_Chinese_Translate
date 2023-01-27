@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name        UEX汉化脚本
-// @namespace   Violentmonkey Scripts
-// @match       https://uexcorp.space/*
-// @grant       none
-// @version     0.8.0
-// @license  GNU GPLv3
-// @author      CxJuice
-// @description 2022/7/28 12:48:01
+// @name                UEX——CN
+// @name:zh-CN          UEX汉化脚本
+// @namespace           https://github.com/CxJuice/Uex_Chinese_Translate
+// @version             0.8.0
+// @description         UEX——CN
+// @description:zh      UEX汉化插件
+// @description:zh-CN   UEX汉化插件
+// @author              CxJuice
 // @match               https://uexcorp.space/*
 // @match               https://www.erkul.games/*
 // @grant               GM_xmlhttpRequest
@@ -19,25 +19,26 @@ window.addEventListener('load', function(event) {
   // 当页面加载完成时，执行我们的脚本
   myScript();
 });
- 
+
 // 监听页面中的鼠标点击事件
 document.addEventListener('click', function(event) {
   // 当发生鼠标点击事件时，执行我们的脚本
   myScript();
 });
 function myScript() {
+
 (function() {
   'use strict';
- 
+
   const SUPPORT_LANG = ["zh-CN", "ja"];
   const lang = (navigator.language || navigator.userLanguage);
   const locales = getLocales(lang)
- 
+
   translateByCssSelector();
   translateDesc();
   traverseElement(document.body);
   watchUpdate();
- 
+
   function getLocales(lang) {
     if(lang.startsWith("zh")) { // zh zh-TW --> zh-CN
       lang = "zh-CN";
@@ -50,12 +51,12 @@ function myScript() {
       dict: {}
     };
   }
- 
+
   function translateRelativeTimeEl(el) {
     const datetime = $(el).attr('datetime');
     $(el).text(timeago.format(datetime, lang.replace('-', '_')));
   }
- 
+
   function translateElement(el) {
     // Get the text field name
     let k;
@@ -68,34 +69,32 @@ function myScript() {
     } else {
       k = 'data';
     }
- 
+
     const txtSrc = el[k].trim();
     const key = txtSrc.toLowerCase()
         .replace(/\xa0/g, ' ') // replace '&nbsp;'
         .replace(/\s{2,}/g, ' ');
- 
+
     if(locales.dict[key]) {
       el[k] = el[k].replace(txtSrc, locales.dict[key])
     }
   }
- 
+
   function shoudTranslateEl(el) {
-    const blockIds = ["readme", "wiki-content"];
+    const blockIds = [];
     const blockClass = [
-      "mat-icon",
-      "CodeMirror",
       "css-truncate" // 过滤文件目录
     ];
-    const blockTags = [];
- 
+    const blockTags = [ "IMG", "svg"];
+
     if(blockTags.includes(el.tagName)) {
       return false;
     }
- 
+
     if(el.id && blockIds.includes(el.id)) {
       return false;
     }
- 
+
     if(el.classList) {
       for(let clazz of blockClass) {
         if(el.classList.contains(clazz)) {
@@ -103,21 +102,21 @@ function myScript() {
         }
       }
     }
- 
+
     return true;
   }
- 
+
   function traverseElement(el) {
     if(!shoudTranslateEl(el)) {
       return
     }
- 
+
     for(const child of el.childNodes) {
       if(["RELATIVE-TIME", "TIME-AGO"].includes(el.tagName)) {
         translateRelativeTimeEl(el);
         return;
       }
- 
+
       if(child.nodeType === Node.TEXT_NODE) {
         translateElement(child);
       }
@@ -132,7 +131,7 @@ function myScript() {
       }
     }
   }
- 
+
   function watchUpdate() {
     const m = window.MutationObserver || window.WebKitMutationObserver;
     const observer = new m(function (mutations, observer) {
@@ -142,14 +141,14 @@ function myScript() {
         }
       }
     });
- 
+
     observer.observe(document.body, {
       subtree: true,
       characterData: true,
       childList: true,
     });
   }
- 
+
   // translate "about"
   function translateDesc() {
     $(".repository-content .f4").append("<br/>");
@@ -163,11 +162,11 @@ function myScript() {
         .end()
         .text()
         .trim();
- 
+
       if(!desc) {
         return;
       }
- 
+
       GM_xmlhttpRequest({
         onload: function(res) {
           if (res.status === 200) {
@@ -184,7 +183,7 @@ function myScript() {
       });
     });
   }
- 
+
   function translateByCssSelector() {
     if(locales.css) {
       for(var css of locales.css) {
@@ -198,6 +197,5 @@ function myScript() {
       }
     }
   }
- 
 })();
 }
