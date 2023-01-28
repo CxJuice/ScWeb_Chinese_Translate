@@ -2,16 +2,17 @@
 // @name                UEX——CN
 // @name:zh-CN          UEX汉化脚本
 // @namespace           https://github.com/CxJuice/Uex_Chinese_Translate
-// @version             0.8.0
+// @version             0.9.0
 // @description         UEX——CN
 // @description:zh      UEX汉化插件
 // @description:zh-CN   UEX汉化插件
 // @author              CxJuice
 // @match               https://uexcorp.space/*
 // @match               https://www.erkul.games/*
+// @match               https://ccugame.app/*
 // @grant               GM_xmlhttpRequest
 // @grant               GM_getResourceText
-// @resource            zh-CN https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-uex1.7.json
+// @resource            zh-CN https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-uex1.8.json
 // @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==
