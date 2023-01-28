@@ -9,6 +9,7 @@
 // @author              CxJuice
 // @match               https://uexcorp.space/*
 // @match               https://www.erkul.games/*
+// @match               https://ccugame.app/*
 // @grant               GM_xmlhttpRequest
 // @grant               GM_getResourceText
 // @resource            zh-CN https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-uex1.7.json
