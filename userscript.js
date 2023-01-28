@@ -2,7 +2,7 @@
 // @name                UEX——CN
 // @name:zh-CN          UEX汉化脚本
 // @namespace           https://github.com/CxJuice/Uex_Chinese_Translate
-// @version             0.9.1
+// @version             0.9.3
 // @description         UEX——CN
 // @description:zh      UEX汉化插件
 // @description:zh-CN   UEX汉化插件
