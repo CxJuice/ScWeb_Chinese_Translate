@@ -12,7 +12,7 @@
 // @match               https://ccugame.app/*
 // @grant               GM_xmlhttpRequest
 // @grant               GM_getResourceText
-// @resource            zh-CN https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-uex1.9.json
+// @resource            zh-CN https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-uex1.10.json
 // @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
 // @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
 // ==/UserScript==
