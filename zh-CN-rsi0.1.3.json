@@ -1180,7 +1180,7 @@
       "add new address": "添加新地址",
       "create address": "创建地址",
       "first name": "姓",
-      "last name ": "名称",
+      "last name": "名",
       "company": "公司",
       "city": "城市",
       "country": "国家",
@@ -1233,7 +1233,7 @@
       "adventure": "冒险",
       "the game": "游戏",
       "terms of services": "服务条款",
-      "Sort by:": "排序由："
+      "sort by:": "排序由："
   
       
         }
