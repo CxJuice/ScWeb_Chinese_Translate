@@ -902,6 +902,7 @@
       "subscriptions": "订阅",
       "all products": "全部商品",
       "standalone ship": "独立船",
+      "- standalone ship": " - 独立船",
       "gear": "装备",
       "packs": "船包",
       "add-ons": "附件",
@@ -1231,8 +1232,9 @@
       "start the": "开始",
       "adventure": "冒险",
       "the game": "游戏",
-      "terms of services": "服务条款",
+      "terms of services": "服务条款"，
       "Sort by:": "排序由："
+  
       
         }
   }
