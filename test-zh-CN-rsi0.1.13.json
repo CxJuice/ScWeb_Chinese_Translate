@@ -1058,7 +1058,7 @@
     "technical support": "技术支持",
     "ship & pledge query": "飞船&承诺查询",
     "payments, merch & subs": "付款、商品&子物品（退款在这里）",
-    "community & fan requests": "社区￥粉丝请求",
+    "community & fan requests": "社区和粉丝请求",
     "other": "其它",
     "tell us more about your problem": "告诉我们你的问题",
     "attachments": "附件说明",
@@ -1099,7 +1099,7 @@
     "order placed:": "订单生成日期：",
     "amount:": "共计金额：",
     "order id:": "订单 ID：",
-    "status:": "订单状态：",
+    "status:": "状态：",
     "payment:": "付款状态：",
     "fulfillment:": "处理：",
     "done": "完成",
@@ -1307,7 +1307,7 @@
   "announcements": "公告",
   "start here": "从这开始",
   "my activities": "我的活动",
-  "roberts space industries knowledge base": "罗伯茨太空工业公司知识库",
+  "roberts space industries knowledge base": "罗伯茨太空工业知识库",
   "my requests": "我的请求",
   "status": "状况",
   "subject": "主题",
@@ -1365,7 +1365,29 @@
   "requests i'm cc'd on": "我被抄送的请求",
   "no requests found.": "找不到任何请求",
   "announcements": "公告",
-  "known issues": "已知问题"
+  "known issues": "已知问题",
+      "check rsi issue council": "查询RSI问题委员会",
+    "helpdesk forum": "求助论坛",
+    "spectrum community": "光谱社区",
+    "search results": "搜索结果",
+    "account security": "账户安全",
+    "in-game assistance": "游戏内协助",
+    "game information and installs": "游戏信息和安装",
+    "graphic updates and issues": "图形更新和问题",
+    "launcher troubleshooting": "启动器故障排除",
+    "tell us about your issue": "告诉我们您的问题",
+    "denotes required field": "号表示必填字段",
+    "payments, physical merchandise & subscriptions": "付款、实物商品和订阅",
+    "physical merchandise question": "实物商品问题",
+    "renew, cancel or change payments for a subscription": "续订、取消订阅或改变订阅付款方式",
+    "discount coupon missing": "折扣券丢失",
+    "other order issue": "其他订单问题",
+    "add file": "添加文件",
+    "or drop files here": "或将文件放在此处",
+    "recent viewed articles": "最近查看的文章",
+    "add to conversation": "添加到对话中"
+
+    
 
 
 
