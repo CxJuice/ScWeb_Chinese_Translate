@@ -1385,14 +1385,31 @@
     "add file": "添加文件",
     "or drop files here": "或将文件放在此处",
     "recent viewed articles": "最近查看的文章",
-    "add to conversation": "添加到对话中"
+    "add to conversation": "添加到对话中",
+
+
+    "view and manage your account on the public test universe servers.": "浏览和管理你的公共测试宇宙账号",
+    "the public test universe is a testing server that allow you to try and play an unreleased star citizen patch before it is released. in order to play on the ptu, you will need first to copy your account over using the button below.": "公共测试宇宙是一个测试服务器，允许你在星际公民补丁发布前尝试和玩耍。为了在PTU上游戏，你需要先用下面的按钮把你的账户复制过来。",
+    "how does it work?": "这是如何运作的？",
+    "this process will copy all your account data to the public test universe servers and generate a new set of security credentials for your testing account there. once the copy process is complete, you will receive an email with instructions on how to reach and login with this account on the ptu.": "这个过程将把你所有的账户数据复制到公共测试宇宙服务器上，并为你的测试账户生成一套新的安全证书。一旦复制过程完成，你将收到一封电子邮件，说明如何在PTU上使用该账户进行登录。",
+    "copy account to ptu": "复制账号到PTU",
+    "erase account from ptu": "从PTU删除账号",
+    "display title": "显示的头衔",
+    "region": "地区",
+    "spoken languages": "口语语言",
+    "short bio": "简要介绍",
+    "signature": "签名",
+    "apply all changes": "应用所有的更改",
+    "last updated:": "最后一次更新:",
+    "keep my location anonymous": "让我的位置的匿名",
+    "website": "网站",
+    "view and manage your front-facing profile and identity that other members of the community can see.": "查看和管理你的公开个人资料和身份，这些资料可以被社区的其他成员看到。"
 
     
 
+     
 
 
 
-
-    
       }
 }
