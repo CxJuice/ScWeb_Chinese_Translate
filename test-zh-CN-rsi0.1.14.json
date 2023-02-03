@@ -1403,8 +1403,8 @@
     "last updated:": "最后一次更新:",
     "keep my location anonymous": "让我的位置的匿名",
     "website": "网站",
-    "view and manage your front-facing profile and identity that other members of the community can see.": "查看和管理你的公开个人资料和身份，这些资料可以被社区的其他成员看到。"
-
+    "view and manage your front-facing profile and identity that other members of the community can see.": "查看和管理你的公开个人资料和身份，这些资料可以被社区的其他成员看到。",
+    "\b(.*\bcutter\b.*)\b": "小刀"
 
 
       }
