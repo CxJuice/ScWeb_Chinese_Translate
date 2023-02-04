@@ -150,12 +150,30 @@
     "adventure": "冒险",
     "the game": "游戏",
     "terms of services": "服务条款",
+    "status": "状态",
+    "roberts space industries": "罗伯茨太空工业",
+    
     
     
     "members": "成员",
     "reset": "重置",
     "names:": "名称：",
     "join us now!": "立即加入我们！"
+    "history": "历史",
+    "manifesto": "宣言",
+    "charter": "章程",
+    "flag this page": "标记此页面",
+    "description": "描述",
+    "search": "搜索",
+    "search by:": "筛选：",
+    "rank": "排位",
+    "role": "角色",
+    "membership": "资质",
+    "only display users with chosen rank": "只显示选择的等级中包含的用户",
+    "only display users with chosen role": "只显示选择的角色中包含的用户",
+    "only display users with chosen membership": "只显示选择的资质中包含的用户"
+
+    
     
     }
 }
