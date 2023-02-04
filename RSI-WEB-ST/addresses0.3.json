@@ -154,6 +154,7 @@
       "status": "状态",
       "roberts space industries": "罗伯茨太空工业",
       
+      "overview": "概览",
       "billing &": "账单&",
       "subscription": "订阅",
       "comms": "消息",
@@ -175,7 +176,13 @@
       "phone (required)": "电话号码（必填）",
       "make this my default address": "设置为默认地址",
       "save": "保存",
-      "subscribers": "订阅者"
+      "subscribers": "订阅者",
+      "view and manage the different shipping and billing addresses that will be presented to you during purchase checkout.": "查看和管理发货和账单地址，这些地址会在你结账的时候显示。",
+      "region": "地区",
+      "company": "公司",
+      "first name (required)": "前名称（必填）",
+      "last name (required)": "后名称（必填）"
+
       
   
       }
