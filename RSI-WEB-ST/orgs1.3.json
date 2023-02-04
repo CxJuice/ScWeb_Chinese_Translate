@@ -174,8 +174,7 @@
     "only display users with chosen role": "只显示选择的角色中包含的用户",
     "only display users with chosen membership": "只显示选择的会籍中包含的用户",
     "member": "成员",
-    "members": "成员",
-    "loading": "正在加载"
+    "loading members": "加载成员中"
 
     
     
