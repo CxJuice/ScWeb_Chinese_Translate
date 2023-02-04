@@ -168,11 +168,14 @@
     "search by:": "筛选：",
     "rank": "排位",
     "role": "角色",
-    "membership": "资质",
+    "membership": "会籍",
     "admin": "管理",
     "only display users with chosen rank": "只显示选择的等级中包含的用户",
     "only display users with chosen role": "只显示选择的角色中包含的用户",
-    "only display users with chosen membership": "只显示选择的资质中包含的用户"
+    "only display users with chosen membership": "只显示选择的会籍中包含的用户",
+    "member": "成员",
+    "members": "成员",
+    "loading": "正在加载"
 
     
     
