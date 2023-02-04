@@ -1,0 +1,307 @@
+// ==UserScript==
+// @name                星际公民官网汉化插件
+// @name:zh-CN          星际公民官网汉化插件
+// @namespace           https://github.com/CxJuice/Uex_Chinese_Translate
+// @version             0.1.5
+// @description         RSI_WEB_Chinese_Translate
+// @description:zh      RSI_WEB_Chinese
+// @description:zh-CN   星际公民官网汉化
+// @license GPL 3.0
+// @author              LeonRay CxJuice
+// @match               https://robertsspaceindustries.com/*
+// @match               https://support.robertsspaceindustries.com/*
+// @grant               GM_xmlhttpRequest
+// @grant               GM_getResourceText
+// @resource            zh-CN https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/zh-CN-rsi0.1.6.json
+// @resource            concierge https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/RSI-WEB-ST/concierge0.1.0.json
+// @resource            orgs https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/RSI-WEB-ST/orgs1.3.json
+// @resource            addresse https://cdn.jsdelivr.net/gh/CxJuice/Uex_Chinese_Translate@main/RSI-WEB-ST/addresses1.0.json
+// @require             https://cdn.bootcdn.net/ajax/libs/timeago.js/4.0.2/timeago.full.min.js
+// @require             https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js
+// ==/UserScript==
+window.addEventListener('load', function(event) {
+  // 当页面加载完成时，执行我们的脚本
+ 
+  myScript();
+});
+ 
+// 监听页面中的鼠标点击事件
+document.addEventListener('click', function(event) {
+  // 当发生鼠标点击事件时，执行我们的脚本
+  myScript();
+});
+function myScript() {
+ 
+(function() {
+  'use strict';
+ 
+  const SUPPORT_LANG = ["zh-CN", "ja"];
+  const lang = (navigator.language || navigator.userLanguage);
+  const locales = getLocales(lang)
+ 
+  translateByCssSelector();
+  translateDesc();
+  traverseElement(document.body);
+  watchUpdate();
+ 
+  function getLocales(lang) {
+    if(lang.startsWith("zh")) { // zh zh-TW --> zh-CN
+      lang = "zh-CN";
+    }
+      // 获取当前页面 URL
+var currentUrl = window.location.href;
+// 存储的 URL
+const block1 = /^https:\/\/robertsspaceindustries\.com\/account\/billing\/order\//;
+const block2 = /^https:\/\/robertsspaceindustries\.com\/orgs\//;
+ 
+// 根据 URL 值执行不同功能
+if (block1.test(currentUrl)){
+   return JSON.parse(GM_getResourceText(""));
+} else if (currentUrl === "https://robertsspaceindustries.com/account/concierge") {
+   return JSON.parse(GM_getResourceText("concierge"));
+} else if (block2.test(currentUrl)) {
+   return JSON.parse(GM_getResourceText("orgs"));
+} else if (currentUrl === "https://robertsspaceindustries.com/account/addresses") {
+   return JSON.parse(GM_getResourceText("addresse"));
+} else if (currentUrl === "") {
+return JSON.parse(GM_getResourceText(""));
+} else {
+   return JSON.parse(GM_getResourceText(lang));
+}
+    return {
+      css: [],
+      dict: {}
+    };
+  }
+ 
+  function translateRelativeTimeEl(el) {
+    const datetime = $(el).attr('datetime');
+    $(el).text(timeago.format(datetime, lang.replace('-', '_')));
+  }
+ 
+  function translateElement(el) {
+    // Get the text field name
+    let k;
+    if(el.tagName === "INPUT") {
+      if (el.type === 'button' || el.type === 'submit') {
+        k = 'value';
+      } else {
+        k = 'placeholder';
+      }
+    } else {
+      k = 'data';
+    }
+ 
+    const txtSrc = el[k].trim();
+    const key = txtSrc.toLowerCase()
+        .replace(/\xa0/g, ' ') // replace '&nbsp;'
+        .replace(/\s{2,}/g, ' ');
+ 
+    if(locales.dict[key]) {
+      el[k] = el[k].replace(txtSrc, locales.dict[key])
+    }
+  }
+ 
+  function shoudTranslateEl(el) {
+    const blockIds = [];
+    const blockClass = [
+      "css-truncate" // 过滤文件目录
+    ];
+    const blockTags = [ "IMG", "svg"];
+ 
+    if(blockTags.includes(el.tagName)) {
+      return false;
+    }
+ 
+    if(el.id && blockIds.includes(el.id)) {
+      return false;
+    }
+ 
+    if(el.classList) {
+      for(let clazz of blockClass) {
+        if(el.classList.contains(clazz)) {
+          return false;
+        }
+      }
+    }
+ 
+    return true;
+  }
+ 
+  function traverseElement(el) {
+    if(!shoudTranslateEl(el)) {
+      return
+    }
+ 
+    for(const child of el.childNodes) {
+      if(["RELATIVE-TIME", "TIME-AGO"].includes(el.tagName)) {
+        translateRelativeTimeEl(el);
+        return;
+      }
+ 
+      if(child.nodeType === Node.TEXT_NODE) {
+        translateElement(child);
+      }
+      else if(child.nodeType === Node.ELEMENT_NODE) {
+        if(child.tagName === "INPUT") {
+          translateElement(child);
+        } else {
+          traverseElement(child);
+        }
+      } else {
+        // pass
+      }
+    }
+  }
+ 
+  function watchUpdate() {
+    const m = window.MutationObserver || window.WebKitMutationObserver;
+    const observer = new m(function (mutations, observer) {
+      for(let mutationRecord of mutations) {
+        for(let node of mutationRecord.addedNodes) {
+          traverseElement(node);
+        }
+      }
+    });
+ 
+    observer.observe(document.body, {
+      subtree: true,
+      characterData: true,
+      childList: true,
+    });
+  }
+ 
+  // translate "about"
+  function translateDesc() {
+    $(".repository-content .f4").append("<br/>");
+    $(".repository-content .f4").append("<a id='translate-me' href='#' style='color:rgb(27, 149, 224);font-size: small'>翻译</a>");
+    $("#translate-me").click(function() {
+      // get description text
+      const desc = $(".repository-content .f4")
+        .clone()
+        .children()
+        .remove()
+        .end()
+        .text()
+        .trim();
+ 
+      if(!desc) {
+        return;
+      }
+ 
+      GM_xmlhttpRequest({
+        onload: function(res) {
+          if (res.status === 200) {
+            $("#translate-me").hide();
+            // render result
+            const text = res.responseText;
+            $(".repository-content .f4").append("<span style='font-size: small'>TK翻译</span>");
+            $(".repository-content .f4").append("<br/>");
+            $(".repository-content .f4").append(text);
+          } else {
+            alert("翻译失败");
+          }
+        }
+      });
+    });
+  }
+ 
+  function translateByCssSelector() {
+    if(locales.css) {
+      for(var css of locales.css) {
+        if($(css.selector).length > 0) {
+          if(css.key === '!html') {
+            $(css.selector).html(css.replacement);
+          } else {
+            $(css.selector).attr(css.key, css.replacement);
+          }
+        }
+      }
+    }
+  }
+})();
+}
+function translateTextNodes(node) {
+  if (node.nodeType === Node.TEXT_NODE) {
+    node.nodeValue = node.nodeValue.replace(/Cutter/gi, '小刀');
+  } else {
+    for (let i = 0; i < node.childNodes.length; i++) {
+      translateTextNodes(node.childNodes[i]);
+    }
+  }
+}
+ 
+translateTextNodes(document.body);
+ 
+var currentUrl = window.location.href;
+// 存储的 URL=
+const block1 = /^https:\/\/robertsspaceindustries\.com\/account\/billing\/order\//;
+const block2 = /^https:\/\/robertsspaceindustries\.com\/orgs\//;
+const block3 = /^https:\/\/robertsspaceindustries\.com\/citizens\//;
+ 
+// 根据 URL 值执行不同功能
+//__ORGS__CITIZENS__
+if (block2.test(currentUrl)||block3.test(currentUrl)||currentUrl === "https://robertsspaceindustries.com/account/organization") {
+ 
+ 
+window.addEventListener('load', function(event) {
+ 
+ 
+const replaceWords = [
+    { word: 'members', replacement: '名成员' },
+ 
+  // ...
+];
+ 
+function replaceTextNode(node) {
+  if (node.nodeType === Node.TEXT_NODE) {
+    let nodeValue = node.nodeValue;
+    replaceWords.forEach(({ word, replacement }) => {
+      nodeValue = nodeValue.replace(new RegExp(word, 'gi'), replacement);
+    });
+    node.nodeValue = nodeValue;
+  } else if (node.nodeName !== 'BUTTON' && node.nodeName !== 'A' && node.nodeName !== 'IMG') {
+    for (let i = 0; i < node.childNodes.length; i++) {
+      replaceTextNode(node.childNodes[i]);
+    }
+  }
+}
+ 
+replaceTextNode(document.body);
+ 
+});
+}
+//__REFERRAL__
+else if (currentUrl === "https://robertsspaceindustries.com/account/referral-program" ||"https://robertsspaceindustries.com/account/referral-program?recruits=1")
+{
+  window.addEventListener('load', function(event) {
+ 
+ 
+const replaceWords = [
+  { word: 'Total recruits: ', replacement: '总邀请数：' },
+  { word: 'Prospects ', replacement: '未完成的邀请' },
+  { word: 'Recruits', replacement: '已完成的邀请' },
+  // ...
+];
+ 
+function replaceTextNode(node) {
+  if (node.nodeType === Node.TEXT_NODE) {
+    let nodeValue = node.nodeValue;
+    replaceWords.forEach(({ word, replacement }) => {
+      nodeValue = nodeValue.replace(new RegExp(word, 'gi'), replacement);
+    });
+    node.nodeValue = nodeValue;
+  } else{
+    for (let i = 0; i < node.childNodes.length; i++) {
+      replaceTextNode(node.childNodes[i]);
+    }
+  }
+}
+ 
+replaceTextNode(document.body);
+ 
+});
+}
+else {
+ 
+}
