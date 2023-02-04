@@ -169,6 +169,7 @@
     "rank": "排位",
     "role": "角色",
     "membership": "资质",
+    "admin": "管理",
     "only display users with chosen rank": "只显示选择的等级中包含的用户",
     "only display users with chosen role": "只显示选择的角色中包含的用户",
     "only display users with chosen membership": "只显示选择的资质中包含的用户"
