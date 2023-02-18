@@ -278,6 +278,7 @@
     "600i": "600i",
     "600i executive edition": "600i 行政版",
     "600i exploration": "600i-探索",
+    "600i explorer": "600i-探索",
     "600i touring": "600i-旅行",
     "85x": "85X",
     "890 jump": "890 跃动",
@@ -356,6 +357,7 @@
     "mustang omega": "野马 欧米伽",
     "p-52 merlin": "P-52 梅林",
     "p-72 archimedes": "P-72 阿基米德",
+    "p-72 archimedes emerald": "P-72 阿基米德 翡翠绿",
     "pegasus": "飞马座",
     "pisces": "双鱼座",
     "prowler": "徘徊者",
@@ -1383,6 +1385,7 @@
     "search by name or package": "搜索名称或船包（仅限英文）",
     "type": "类型",
     "game package": "游戏包",
+    "package": "船包",
     "custom name": "自定义名称",
     "export as csv": "导出为CSV",
     "loaner sources": "租赁来源",
@@ -1409,7 +1412,7 @@
     "welcome to": "欢迎来到",
     "ccu game helps you manage your hangar/buybacks and helps you reach your dream fleet.": "CCU Game 帮助你管理你的 机库/回购 ，帮助完成你的梦想舰队。",
     "the ccu game browser extension is installed in your browser. you can use ccugame.app without cloud support. then all your data will never leave your browser, but you won't be able to access it from other devices.": "CCU GAME 的浏览器拓展插件已安装在你的浏览器中，你可以在不上传你的数据到云端的情况下使用CCU GAME，你的数据只会留在你的浏览器中，你无法在其他设备中访问你的数据。除非登录账号上传至云端。点击下方“仅在本地使用”按钮立即体验离线版。",
-    "get the ccu Game browser extension to import data from robertsspaceindustries.com:": "安装 CCU Game 的浏览器拓展插件，以使得从获取robertsspaceindustries.com中获取数据：",
+    "get the ccu game browser extension to import data from robertsspaceindustries.com:": "安装 CCU Game 的浏览器拓展插件，以使得从获取robertsspaceindustries.com中获取数据：",
     "(also works for other chromium browser)": "（也适用于其他chromium内核的浏览器）",
     "Error": "出现错误",
     "could not refresh hangar/buyback: please log in on robertsspaceindustries.com": "无法刷新 商店/机库：请在robertsspaceindustries.com中登陆你的账号",
@@ -1807,7 +1810,7 @@
     "vanguard series - solar winds paint": "先锋 - 太阳风涂装",
     "lifetime insurance": "终身保险",
     "giftable status of item": "物品的礼物状态",
-    "is item a Warbond item": "物品是否为战争债券版",
+    "is item a warbond item": "物品是否为战争债券版",
     "all-ships": "所有飞船",
     "always available": "常驻销售",
     "ship is only available for a limited amount of time in the store": "该飞船仅在特定的时间内限时销售",
@@ -1888,10 +1891,11 @@
     "courier": "邮递",
     "light carrier": "轻型运载舰",
     "light freight": "轻型货运",
-    "": "",
-
-
-
+    "email address is required": "请输入邮箱地址",
+    "close": "关闭",
+    "ccu game browser extension found, extended functionality available": "已安装CCU Game浏览器拓展插件，拓展插件可用",
+    "only show ships with lti when active": "仅显示可用的LTI（终身保险）载具",
+    "automatic": "自动选择",
 
 
     "your personal account": "我的个人账户"
