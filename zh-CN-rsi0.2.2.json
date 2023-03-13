@@ -2055,7 +2055,7 @@
       "while monitoring those issues, the team has been able to tune and make adjustments to the entitlement processing flow to ensure that a large portion of player attempts were still successful and able to make it into the pu.": "在监控这些问题的同时，团队已经对授权处理流程做出了调整和改变，以确保大部分玩家在尝试后仍然成功登入并进入PU。",
       "however, at a point in the early morning utc, the environment entered into a state which would require a more disruptive recovery process.": "然而，在UTC时间凌晨的某个时间点，服务器环境进入了一种需要根据破坏性的恢复过程的状态。",
       "as of 1300 utc the environment has been in the process of recovering from the state it was in but we wanted to advise that, while this recovery is in-progress, players will experience periods of extreme difficulty getting into the pu. we expect players to see a mix of errors from the 19k, 30k, and 60k ranges.": "截至UTC时间1300，环境一直处于从所处的状态恢复的过程中，但我们想提醒大家，虽然恢复正在进行中，但玩家将经历一段极难进入PU的时间。我们可以预见玩家将看到 19k、30k 和 60k 范围内的各种错误信息。",
-      "a more detailed breakdown of each specific issue we're tracking can be found on the the ": "关于我们正在跟踪的每个问题的细节，可以查看：",
+      "a more detailed breakdown of each specific issue we're tracking can be found on the the": "关于我们正在跟踪的每个问题的细节，可以查看：",
       "[2023-03-12 updates]": "[2023-03-12 更新]",
       "1300 utc - environment entered into recovery.": "1300 UTC - 环境进入恢复过程",
       "1510 utc - initial notice, recovery in-progress.": "1510 UTC - 公告发布，恢复进行中",
