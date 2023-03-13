@@ -2062,7 +2062,7 @@
       "1815 utc - shards are slowly coming online. recovery still ongoing.": "1815 UTC - 分片正在慢慢上线。恢复仍在进行中。",
       "2000 utc - reducing severity of outage, will continue to monitor recovery.": "2000 UTC - 减低故障的严重程度（major -> partial），并将继续监测恢复。",
       "[2023-03-13 updates]": "[2023-03-13 更新]",
-      "the team is working to recover the environment as the global database entered a bad state.": "全球数据库进入不良状态，该团队正在努力恢复",
+      "the team is working to recover the environment as the global database entered a bad state.": "全球数据库进入不良状态，团队正在努力恢复",
       "1130 utc - escalating to major outage.": "1130 UTC - 升级为重大故障",
       "1200 utc - temporarily disabling character repair to protect accounts while recovery is in-progress.": "1200 UTC - 暂时在修复过程中禁用角色修复，以保护账号",
       "1245 utc - environment is accepting new players.": "1245 UTC - 环境正在接受新玩家",
