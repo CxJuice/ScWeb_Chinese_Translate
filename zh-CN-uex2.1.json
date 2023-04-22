@@ -1896,6 +1896,27 @@
     "ccu game browser extension found, extended functionality available": "已安装CCU Game浏览器拓展插件，拓展插件可用",
     "only show ships with lti when active": "仅显示可用的LTI（终身保险）载具",
     "automatic": "自动选择",
+        "accounts": "账户",
+    "enter accounts": "输入账户名",
+    "with ship(s)": "含有船只",
+    "without ship(s)": "不含船只",
+    "current highest savings": "当前最高节省",
+    "long term highest savings": "长期最高节省",
+    "the created chain will have the highest possible savings at this point in time. there could be other chains with the same savings, but none better.": "创建的链会尽可能节省总金额。可能可能会有其他链节省金额相同，但是不会有比这个链更节省的了。",
+    "the created chain will only consider ccus with savings and leave everything else to be filled at a later time.": "创建的链只使用能节省资金的CCU，无节省CCU的地方会留空，等待未来的CCU填充进去。",
+    "the created chain will require the least amount of new money. this assumes enough store credits are available.": "在商店信用点足够时，创建的链所需要的新资金（指你要额外打给萝卜的钱）最低。",
+    "anvil ballista snowblind": "弩炮 雪盲",
+    "anvil ballista dunestalker": "弩炮 沙丘追猎者",
+    "argo mole carbon edition": "鼹鼠 炭黑",
+    "argo mole talus edition": "鼹鼠 岩白",
+    "scorpius antares": "天蝎座 蝎心",
+    "exclude gifted ccus": "排除可礼物的CCU",
+    "no ccu game extension": "未安装CCUGAME拓展",
+    "no ccu game browser extension found. please install the browser extension to refresh your rsi data.": "未检测到CCUGAME的拓展插件。请安装该浏览器插件以从RSI刷新你的数据。",
+    "switch to table view": "切换为表格视图",
+    "switch to cards view": "切换为卡片视图",
+    "this is only available for a limited amount of time or access is otherwise limited (this is not necessarily official information, just experience)": "该飞船仅在特定时间在商店销售或购买受到限制。（注意：以上并非官方确切消息，是由社区观察总结得出的结论。）",
+
 
 
     "your personal account": "我的个人账户"
