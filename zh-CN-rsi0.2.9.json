@@ -2086,7 +2086,27 @@
       "alipay": "支付宝",
       "pay with alipay": "使用支付宝付款",
       "payment method unavailable": "该支付方式不可用",
-      "this payment provider is not available for the moment, please retry or use another one": "该支付方式当前不可用，请重试或选择其他支付方式"
+      "this payment provider is not available for the moment, please retry or use another one": "该支付方式当前不可用，请重试或选择其他支付方式",
+      "limited stock": "库存有限",
+      "ticket": "门票",
+      "event tickets": "活动门票",
+      "unavailable": "不可用",
+      "related products": "相关商品",
+      "mirai": "未来",
+      "add-ons - banu lockbox replica": "附件 - 巴努盒子复制品",
+      "banu lockbox replica": "巴努盒子复制品",
+      "please type your password to confirm:": "请输入你的密码以确认：",
+      "who should we send this gift to?": "我们要将它赠送给谁？",
+      "once your gift has been claimed it will be bound to the recipient's account and cannot be re-gifted.": "你的礼物一旦被领取，它将绑定在领取人的账户中，且不能再次赠与他人。",
+      "you are about to gift your": "你将要通过电子邮件将",
+      "pledge to another citizen by email. this will": "这个承诺物品赠送给其他公民。一旦被领取，将会",
+      "transfer your pledge": "转移你的承诺物品。",
+      "as soon as it is accepted by the recipient. You can cancel the gift at any time until then.": "你可以在此之前取消赠送。",
+      "recipient name": "收件人昵称",
+      "recipient email": "收件人邮箱",
+      "gift your pledge": "赠送你的承诺物品",
+      "character repair": "账户修复",
+      "request repair": "申请修复"
         }
   }
   
