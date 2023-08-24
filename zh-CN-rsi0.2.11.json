@@ -922,7 +922,7 @@
       "how to play": "如何游玩",
       "the universe": "关于宇宙",
       "media": "媒体",
-      "social links": "社交软件",
+      "social links": "社交网站",
       "facebook": "脸书",
       "twitter": "推特",
       "instagram": "照片墙",
@@ -2106,7 +2106,21 @@
       "recipient email": "收件人邮箱",
       "gift your pledge": "赠送你的承诺物品",
       "character repair": "账户修复",
-      "request repair": "申请修复"
+      "request repair": "申请修复",
+      "upvoted": "已投票",
+      "discover the ship": "了解这艘飞船",
+      "today's face off": "今日对决",
+      "remaining": "剩余",
+      "time to vote": "投票时间",
+      "hours": "时",
+      "min": "分",
+      "sec": "秒",
+      "tournament overview": "决斗概况",
+      "highlight my votes": "显示我的投票",
+      "from now through september 6, we’re pitting the community’s top 16 flyable ships against each other. check back each day to vote for your favorites and see which one comes out on top.": "社区投票排名前16的可飞飞船将在此进行决斗，从现在直到9月6日，每天都可以来为你喜欢的飞船投票。最终哪艘飞船最受欢迎呢？让我们拭目以待。",
+      "vote": "投票",
+      "you must": "你需要",
+      "to upvote!": "后进行投票！"
         }
   }
   
