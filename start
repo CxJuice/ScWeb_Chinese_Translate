@@ -1,5 +1,5 @@
 {
-  "name": "my-json-service",
+  "name": "json-service",
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js"
