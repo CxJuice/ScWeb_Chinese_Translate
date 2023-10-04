@@ -14,7 +14,6 @@
       "replacement": "请求拉取"
     }
   ],
-
   "dict": {
     "games": "游戏",
     "apps": "应用",
@@ -152,9 +151,6 @@
     "terms of services": "服务条款",
     "status": "状态",
     "roberts space industries": "罗伯茨太空工业",
-    
-    
-    
     "members": "成员",
     "reset": "重置",
     "names:": "名称：",
@@ -175,8 +171,5 @@
     "only display users with chosen membership": "只显示选择的会籍中包含的用户",
     "member": "成员",
     "loading members": "加载成员中"
-
-    
-    
-    }
+  }
 }

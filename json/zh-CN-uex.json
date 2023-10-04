@@ -14,9 +14,7 @@
       "replacement": "请求拉取"
     }
   ],
-
   "dict": {
-    
     "weapons": "武器",
     "firing": "开火",
     "idle": "待机",
@@ -94,8 +92,7 @@
     "temp to ir": "红外信号",
     "range": "距离",
     "full charge in": "完全充能时间",
-    "cooling/s":"冷却/s",
-
+    "cooling/s": "冷却/s",
     "suldrath": "苏得拉斯",
     "sukoran": "斯科拉",
     "shield banu": "巴努护盾",
@@ -266,7 +263,6 @@
     "c-912 ballistic cannon": "C-912",
     "sf7b ballistic gatling": "SF7B",
     "sf7e laser cannon": "SF7E",
-    
     "100i": "100i",
     "125a": "125a",
     "135c": "135c",
@@ -502,8 +498,6 @@
     "fury": "狂怒",
     "fury mx": "狂怒 MX",
     "storm": "风暴",
-
-
     "standalone ship - 100i": "独立船 - 100i",
     "standalone ship - 125a": "独立船 - 125a",
     "standalone ship - 135c": "独立船 - 135c",
@@ -734,8 +728,6 @@
     "standalone ship - polaris": "独立船 - 北极星",
     "standalone ship - argo mole": "独立船 - 南船座 鼹鼠",
     "standalone ship - ptv buggy": "独立船 - PTV 越野小车",
-
-
     "aegis": "圣盾",
     "anvil": "铁砧",
     "c.o.": "联合外域",
@@ -744,9 +736,8 @@
     "drake": "德雷克",
     "gatac": "盖塔克",
     "origin": "起源",
-    "banu": "巴努",  
-
-    "origin jumpworks": "起源跃动",  
+    "banu": "巴努",
+    "origin jumpworks": "起源跃动",
     "crusader industries": "十字军工业",
     "roberts space industries": "罗伯茨太空工业",
     "aegis dynamics": "圣盾动力",
@@ -763,7 +754,6 @@
     "Musashi industrial and starflight concern": "武藏工业与星航株式会社",
     "tumbril land systems": "盾博尔地面系统",
     "vanduul clans": "剜度氏族",
-
     "voyage": "航程",
     "wanderer": "流浪者",
     "wayfare": "旅行",
@@ -966,8 +956,6 @@
     "'bullet' ii": "子弹 II",
     "'chaos' iii": "混乱 III",
     "'dragon' iv": "飞龙 IV",
-
-    
     "yield": "产出",
     "daily prices (purchase)": "每日价格 (买入)",
     "daily prices (sell)": "每日价格 (卖出)",
@@ -1011,8 +999,8 @@
     "ship": "飞船",
     "uex rating": "UEX评级",
     "minute": "分钟",
-    "clear list": "清空列表",	
-    "download (csv)": "下载（CSV文件）",	
+    "clear list": "清空列表",
+    "download (csv)": "下载（CSV文件）",
     "rock": "矿石",
     "rock cscu": "矿石cSCU",
     "mineral scu": "矿物SCU",
@@ -1060,8 +1048,6 @@
     "max. yield*": "最大收益",
     "uex Rating™": "UEX评级™",
     "variation": "变化",
-
-
     "agricium": "艾格瑞金属",
     "agri": "艾格瑞",
     "agricultural supplies": "农业物资",
@@ -1127,7 +1113,6 @@
     "tara": "塔兰导电石",
     "titanium (ore)": "钛(矿石)",
     "tungsten (ore)": "钨(矿石)",
-    
     "stanton": "斯坦顿",
     "arcCorp": "弧光",
     "cellin": "赛琳",
@@ -1146,7 +1131,6 @@
     "euterpe": "欧忒耳佩",
     "aaron halo": "亚伦环带",
     "delamar": "德拉玛",
-
     "hdms-anderson": "HDMS-安德森站",
     "hdms-norgaard": "HDMS-诺加德站",
     "hdms-ackley": "HDMS-阿克莱站",
@@ -1231,8 +1215,6 @@
     "new babbage mtps": "新巴贝奇-MTPS",
     "orims - orison ms": "奥里森-MS",
     "orison tdd": "奥里森-TDD",
-
-
     "fleet": "舰队",
     "ships": "飞船",
     "equipment": "装备",
@@ -1259,7 +1241,7 @@
     "community": "社区",
     "join our ccu game community": "加入我们CCU Game的社区",
     "donate": "捐赠",
-    "changelog": "更新日志", 
+    "changelog": "更新日志",
     "download fleetview.json": "下载 leetview.json",
     "open on starship42.com": "在starship42.com中打开",
     "export to scorg.tools": "导出到scorg.tools",
@@ -1484,7 +1466,6 @@
     "privacy policy": "隐私条款",
     "create your free account": "创建你的免费账户",
     "you own this item or all items contained in it": "你已拥有此项目或此项目中的所有物品",
-
     "2951 auspicious red paint pack": "2951吉祥红涂装包",
     "2952 auspicious red paint pack": "2952吉祥红涂装包",
     "2953 auspicious red paint pack": "2953吉祥红涂装包",
@@ -1900,7 +1881,7 @@
     "ccu game browser extension found, extended functionality available": "已安装CCU Game浏览器拓展插件，拓展插件可用",
     "only show ships with lti when active": "仅显示可用的LTI（终身保险）载具",
     "automatic": "自动选择",
-        "accounts": "账户",
+    "accounts": "账户",
     "enter accounts": "输入账户名",
     "with ship(s)": "含有船只",
     "without ship(s)": "不含船只",
@@ -1920,9 +1901,6 @@
     "switch to table view": "切换为表格视图",
     "switch to cards view": "切换为卡片视图",
     "this is only available for a limited amount of time or access is otherwise limited (this is not necessarily official information, just experience)": "该飞船仅在特定时间在商店销售或购买受到限制。（注意：以上并非官方确切消息，是由社区观察总结得出的结论。）",
-
-
-
     "your personal account": "我的个人账户"
   }
 }
