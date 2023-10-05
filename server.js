@@ -1,10 +1,13 @@
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors'); // <-- 导入 cors 中间件
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 const JSON_FOLDER_PATH = path.join(__dirname, 'json'); 
+
+app.use(cors()); // <-- 使用 cors 中间件以允许所有来源
 
 // 获取文件夹内的所有 JSON 文件
 app.get('/json-files', (req, res) => {
