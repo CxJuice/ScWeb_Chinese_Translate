@@ -1,10 +1,5 @@
 on:
   workflow_dispatch:
-  pull_request:
-    branches:
-    - main
-    - json-improvement
-    types: [closed]
   push:
     branches: [ main ]
 jobs:
