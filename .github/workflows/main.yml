@@ -1,0 +1,52 @@
+on:
+  pull_request:
+    branches:
+    - main
+    - json-improvement
+jobs:
+  bump_version:
+    name: Bump Version
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Get changed files
+      id: getfile
+      run: |
+        files=$(git diff --name-only HEAD^ HEAD)
+        echo "::set-output name=files::$files"
+
+    - name: Bump version number based on changed files
+      run: |
+        changed_files="${{ steps.getfile.outputs.files }}"
+        
+        # Use jq to bump version numbers based on changed files
+        if echo "$changed_files" | grep -q "addresses.json"; then
+          jq '.addresses |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+        fi
+        if echo "$changed_files" | grep -q "concierge.json"; then
+          jq '.concierge |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+        fi
+        if echo "$changed_files" | grep -q "hangar.json"; then
+          jq '.hangar |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+        fi
+        if echo "$changed_files" | grep -q "orgs.json"; then
+          jq '.orgs |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+        fi
+        if echo "$changed_files" | grep -q "zh-CN-rsi.json"; then
+          jq '.orgs |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/rsi.json
+        fi
+        if echo "$changed_files" | grep -q "zh-CN-uex.json"; then
+          jq '.orgs |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/uex.json
+        fi
+
+    - name: Commit and push changes if there's an update
+      run: |
+        if [[ `git status --porcelain` ]]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add json/versions.json
+          git commit -m "Bump version number" && git push
+        fi
