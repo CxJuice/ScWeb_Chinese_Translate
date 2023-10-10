@@ -5,6 +5,8 @@ on:
     - main
     - json-improvement
     types: [closed]
+  push:
+    branches: [ main ]
 jobs:
   bump_version:
     name: Bump Version
