@@ -1,20 +1,3 @@
 {
-  "__comments-css": [
-    "css selector",
-    "css选择器"
-  ],
-  "css": [
-    {
-      "_comments": [
-        "if key === '!html' replace target by: $(selector).html(replacement)",
-        "else: $(selector).attr(key, replacement)"
-      ],
-      "key": "!html",
-      "selector": "a[aria-label='Pull requests you created']",
-      "replacement": "请求拉取"
-    }
-  ],
-  "dict": {
-    "upgrades": "升"
-  }
+  "upgrades": "升"
 }
