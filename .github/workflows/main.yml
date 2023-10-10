@@ -34,28 +34,28 @@ jobs:
     
         # Use jq and increment_version function to bump version numbers based on changed files
         if echo "$changed_files" | grep -q "addresses.json"; then
-          new_version=$(increment_version $(jq -r '.addresses' json/versions.json))
-          jq --arg v "$new_version" '.addresses = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.addresses' json/locales/versions.json))
+          jq --arg v "$new_version" '.addresses = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
         fi
         if echo "$changed_files" | grep -q "concierge.json"; then
-          new_version=$(increment_version $(jq -r '.concierge' json/versions.json))
-          jq --arg v "$new_version" '.concierge = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.concierge' json/locales/versions.json))
+          jq --arg v "$new_version" '.concierge = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
         fi
         if echo "$changed_files" | grep -q "hangar.json"; then
-          new_version=$(increment_version $(jq -r '.hangar' json/versions.json))
-          jq --arg v "$new_version" '.hangar = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.hangar' json/locales/versions.json))
+          jq --arg v "$new_version" '.hangar = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
         fi
         if echo "$changed_files" | grep -q "orgs.json"; then
-          new_version=$(increment_version $(jq -r '.orgs' json/versions.json))
-          jq --arg v "$new_version" '.orgs = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.orgs' json/locales/versions.json))
+          jq --arg v "$new_version" '.orgs = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
         fi
         if echo "$changed_files" | grep -q "zh-CN-rsi.json"; then
-          new_version=$(increment_version $(jq -r '.rsi' json/versions.json))
-          jq --arg v "$new_version" '.rsi = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.rsi' json/locales/versions.json))
+          jq --arg v "$new_version" '.rsi = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
         fi
         if echo "$changed_files" | grep -q "zh-CN-uex.json"; then
-          new_version=$(increment_version $(jq -r '.uex' json/versions.json))
-          jq --arg v "$new_version" '.uex = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.uex' json/locales/versions.json))
+          jq --arg v "$new_version" '.uex = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
         fi
 
     - name: Commit and push changes if there's an update
@@ -63,6 +63,6 @@ jobs:
         if [[ `git status --porcelain` ]]; then
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add json/versions.json
+          git add json/locales/versions.json
           git commit -m "Bump version number" && git push
         fi
