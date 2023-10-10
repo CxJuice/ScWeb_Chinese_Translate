@@ -26,26 +26,36 @@ jobs:
 
     - name: Bump version number based on changed files
       run: |
+        increment_version() {
+          echo "$1" | awk -F. '{$NF = $NF + 1;} 1' OFS=.
+        }
+    
         changed_files="${{ steps.getfile.outputs.files }}"
-        
-        # Use jq to bump version numbers based on changed files
+    
+        # Use jq and increment_version function to bump version numbers based on changed files
         if echo "$changed_files" | grep -q "addresses.json"; then
-          jq '.addresses |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.addresses' json/versions.json))
+          jq --arg v "$new_version" '.addresses = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
         fi
         if echo "$changed_files" | grep -q "concierge.json"; then
-          jq '.concierge |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.concierge' json/versions.json))
+          jq --arg v "$new_version" '.concierge = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
         fi
         if echo "$changed_files" | grep -q "hangar.json"; then
-          jq '.hangar |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.hangar' json/versions.json))
+          jq --arg v "$new_version" '.hangar = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
         fi
         if echo "$changed_files" | grep -q "orgs.json"; then
-          jq '.orgs |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
+          new_version=$(increment_version $(jq -r '.orgs' json/versions.json))
+          jq --arg v "$new_version" '.orgs = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
         fi
         if echo "$changed_files" | grep -q "zh-CN-rsi.json"; then
-          jq '.orgs |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/rsi.json
+          new_version=$(increment_version $(jq -r '.rsi' json/versions.json))
+          jq --arg v "$new_version" '.rsi = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
         fi
         if echo "$changed_files" | grep -q "zh-CN-uex.json"; then
-          jq '.orgs |= .+1' json/versions.json > json/temp.json && mv json/temp.json json/uex.json
+          new_version=$(increment_version $(jq -r '.uex' json/versions.json))
+          jq --arg v "$new_version" '.uex = $v' json/versions.json > json/temp.json && mv json/temp.json json/versions.json
         fi
 
     - name: Commit and push changes if there's an update
