@@ -1,8 +1,10 @@
 on:
+  workflow_dispatch:
   pull_request:
     branches:
     - main
     - json-improvement
+    types: [closed]
 jobs:
   bump_version:
     name: Bump Version
