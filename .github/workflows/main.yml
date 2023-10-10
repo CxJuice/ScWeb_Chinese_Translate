@@ -21,7 +21,7 @@ jobs:
     - name: Get changed files
       id: getfile
       run: |
-        files=$(git diff --name-only HEAD^ HEAD)
+        files=$(git diff --name-only HEAD^ HEAD | tr '\n' ' ')
         echo "::set-output name=files::$files"
 
     - name: Bump version number based on changed files
@@ -31,32 +31,37 @@ jobs:
         }
     
         changed_files="${{ steps.getfile.outputs.files }}"
+        temp_file=$(mktemp)
+    
+        cp json/versions.json $temp_file
     
         # Use jq and increment_version function to bump version numbers based on changed files
         if echo "$changed_files" | grep -q "addresses.json"; then
           new_version=$(increment_version $(jq -r '.addresses' json/locales/versions.json))
-          jq --arg v "$new_version" '.addresses = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
+          jq --arg v "$new_version" '.addresses = $v' $temp_file > json/temp.json && mv json/temp.json $temp_file
         fi
         if echo "$changed_files" | grep -q "concierge.json"; then
           new_version=$(increment_version $(jq -r '.concierge' json/locales/versions.json))
-          jq --arg v "$new_version" '.concierge = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
+          jq --arg v "$new_version" '.concierge = $v' $temp_file > json/temp.json && mv json/temp.json $temp_file
         fi
         if echo "$changed_files" | grep -q "hangar.json"; then
           new_version=$(increment_version $(jq -r '.hangar' json/locales/versions.json))
-          jq --arg v "$new_version" '.hangar = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
+          jq --arg v "$new_version" '.hangar = $v' $temp_file > json/temp.json && mv json/temp.json $temp_file
         fi
         if echo "$changed_files" | grep -q "orgs.json"; then
           new_version=$(increment_version $(jq -r '.orgs' json/locales/versions.json))
-          jq --arg v "$new_version" '.orgs = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
+          jq --arg v "$new_version" '.orgs = $v' $temp_file > json/temp.json && mv json/temp.json $temp_file
         fi
         if echo "$changed_files" | grep -q "zh-CN-rsi.json"; then
-          new_version=$(increment_version $(jq -r '.rsi' json/locales/versions.json))
-          jq --arg v "$new_version" '.rsi = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
+          new_version=$(increment_version $(jq -r '.rsi' $temp_file))
+          jq --arg v "$new_version" '.rsi = $v' $temp_file > json/temp.json && mv json/temp.json $temp_file
         fi
         if echo "$changed_files" | grep -q "zh-CN-uex.json"; then
-          new_version=$(increment_version $(jq -r '.uex' json/locales/versions.json))
-          jq --arg v "$new_version" '.uex = $v' json/locales/versions.json > json/temp.json && mv json/temp.json json/locales/versions.json
+          new_version=$(increment_version $(jq -r '.uex' $temp_file))
+          jq --arg v "$new_version" '.uex = $v' $temp_file > json/temp.json && mv json/temp.json $temp_file
         fi
+
+        mv $temp_file json/versions.json
 
     - name: Commit and push changes if there's an update
       run: |
