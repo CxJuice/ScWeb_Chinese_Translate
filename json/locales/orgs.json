@@ -38,7 +38,7 @@
   "sign in": "登入",
   "account recovery": "找回账户",
   "enlist now": "现在注册",
-  "sign in failed. you may have entered the wrong credentials, or the account does not exist, or has not been activated. (1032)": "登陆失败。你可能输入了错误的邮箱或密码，或账户未激活。",
+  "sign in failed. you may have entered the wrong credentials, or the account does not exist, or has not been activated. (1032)": "登入失败。你可能输入了错误的邮箱或密码，或账户未激活。",
   "email address": "邮箱地址",
   "enter the email address associated with your rsi account and you will receive the instructions to create a new password.": "输入你与RSI账户关联的邮箱地址，你的邮箱将收到一条邮件来帮助你创建新的密码。",
   "submit": "提交",
