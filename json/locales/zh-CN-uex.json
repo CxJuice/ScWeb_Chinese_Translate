@@ -952,8 +952,8 @@
     "sell at": "售卖位置",
     "cscu buy": "购买的cSCU",
     "cscu sell": "卖出的cSCU",
-    "start": " 开始",
-    "end": " 结束",
+    "start": "开始",
+    "end": "结束",
     "known route": "已知路线",
     "30k relief": "给30K的安慰",
     "trips list": "航程列表",
@@ -1885,5 +1885,23 @@
     "switch to table view": "切换为表格视图",
     "switch to cards view": "切换为卡片视图",
     "this is only available for a limited amount of time or access is otherwise limited (this is not necessarily official information, just experience)": "该飞船仅在特定时间在商店销售或购买受到限制。（注意：以上并非官方确切消息，是由社区观察总结得出的结论。）",
-    "your personal account": "我的个人账户"
+    "your personal account": "我的个人账户",
+    "Area18": "18区",
+    "Astro Armada": "天文舰队",
+    "MAX SPEED": "最大速度",
+    "MAX PITCH/YAW/ROLL": "最大 俯仰/偏航/横滚",
+    "HYDROGEN CAPACITY": "氢燃料容量",
+    "QT FUEL CAPACITY": "量子燃料",
+    "Adventure calls and Anvil Aerospace answers with the Carrack": {
+        " Built to endure extreme conditions in both space and atmosphere, this self-sustaining explorer has more than earned its long-standing status as the go-to pathfinder for both military and civilian service": {
+            "": "1"
+        }
+    },
+    "ThermalCore": " ThermalCore ",
+    "Laser Repeater": "激光加特林",
+    "Revenant": " Revenant ",
+    "Ballistic Gatling": "1",
+    "manned bubble right": " manned bubble right ",
+    "manned bubble left": "左侧载人炮塔",
+    "ice-flush": "ice-flush"
 }
