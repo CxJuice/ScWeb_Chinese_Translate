@@ -1891,5 +1891,10 @@
     "MAX SPEED": "最大速度",
     "MAX PITCH/YAW/ROLL": "最大 俯仰/偏航/横滚",
     "HYDROGEN CAPACITY": "氢燃料容量",
-    "QT FUEL CAPACITY": "量子燃料"
+    "QT FUEL CAPACITY": "量子燃料",
+    "Adventure calls and Anvil Aerospace answers with the Carrack": {
+        " Built to endure extreme conditions in both space and atmosphere, this self-sustaining explorer has more than earned its long-standing status as the go-to pathfinder for both military and civilian service": {
+            "": "1"
+        }
+    }
 }
