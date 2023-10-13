@@ -7,18 +7,18 @@ const PORT = process.env.PORT || 3000;
 const JSON_FOLDER_PATH = path.join(__dirname, 'json'); 
 const LOCALES_JSON_FOLDER_PATH = path.join(__dirname, 'json/locales'); 
 
-function transformToLowerCase(obj) {
+function transformKeysToLowerCase(obj) {
     if (typeof obj !== 'object' || obj === null) {
         return obj;
     }
     
     if (Array.isArray(obj)) {
-        return obj.map(value => transformToLowerCase(value));
+        return obj.map(value => transformKeysToLowerCase(value));
     }
     
     let newObj = {};
     for (let key in obj) {
-        newObj[key.toLowerCase()] = (typeof obj[key] === 'string') ? obj[key].toLowerCase() : transformToLowerCase(obj[key]);
+        newObj[key.toLowerCase()] = transformKeysToLowerCase(obj[key]);
     }
     
     return newObj;
@@ -48,7 +48,7 @@ app.get('/json-files/:filename', (req, res) => {
         }
         try {
             const jsonData = JSON.parse(data);
-            res.json(transformToLowerCase(jsonData));
+            res.json(transformKeysToLowerCase(jsonData));
         } catch (parseErr) {
             res.status(500).send('Error parsing JSON.');
         }
@@ -68,7 +68,7 @@ app.get('/json-files/locales/:filename', (req, res) => {
         }
         try {
             const jsonData = JSON.parse(data);
-            res.json(transformToLowerCase(jsonData));
+            res.json(transformKeysToLowerCase(jsonData));
         } catch (parseErr) {
             res.status(500).send('Error parsing JSON.');
         }
