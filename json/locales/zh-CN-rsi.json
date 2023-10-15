@@ -869,9 +869,7 @@
     "i agree to the": "我接受",
     "terms of service": "服务条款",
     "and": "和",
-    "privacy policy": {
-        "": "隐私条款。"
-    },
+    "privacy policy": "隐私条款",
     "enlist": "报名",
     "already have an account?": "已经拥有一个账户？",
     "please accept the terms of service and the privacy policy.": "请接受服务条款和隐私条款。",
@@ -1062,7 +1060,7 @@
     "shop": "商店",
     "welcome to the": "欢迎来到",
     "chairman's club": "礼宾俱乐部",
-    "fideles quoad decedemus": "忠贞不渝",
+    "fideles quoad decedemus": "",
     "your": "你的",
     "concierge exclusive": "礼宾专属",
     "forums and chat groups:": "论坛和聊天室：",
@@ -1716,13 +1714,7 @@
     "first name": "前名称",
     "last name": "后名称",
     "membership": "会籍",
-    "loading": {
-        "": {
-            "": {
-                "": "加载中..."
-            }
-        }
-    },
+    "loading": "正在加载",
     "loading upgrades": "正在加载升级包",
     "citizen con 2953": "公民控 2953",
     "save the date!": "预留时间，按时参加!",
@@ -2108,33 +2100,18 @@
     "Find a license, claim your Anvil F8C Lightning": "寻找认证券，获取铁砧F8C 闪电",
     "Happy Birthday Star Citizen!": "生日快乐星际公民！",
     "welcome to issue council": "欢迎来到 问题理事会",
-    "we use cookies and technological tools to analyse the traffic of this website, enhance your experience and offer you ads tailored to your interests": {
-        "": "我们使用cookies和技术工具来分析这个网页的流量以提高用户体验并提供适合你们的广告。"
-    },
-    "add a new device": "添加新设备",
-    "maintain control over your data by setting cookies, you can change or withdraw your consent at any time": {
-        " if you refuse cookies, it does not affect the way our site operates, however you will not be able to take full advantage of all our features": {
-            "": "您可以通过设置cookies来限制对您数据的获取，您也可以随时更改或拒绝使用cookies。如果您拒绝使用cookies，不会影响该网页的正常工作，但您无法充分利用我们提供的功能。"
-        }
-    },
+    "we use cookies and technological tools to analyse the traffic of this website, enhance your experience and offer you ads tailored to your interests.": "我们使用cookies和技术工具来分析这个网页的流量以提高用户体验并提供适合你们的广告。",
+    "maintain control over your data by setting cookies, you can change or withdraw your consent at any time. if you refuse cookies, it does not affect the way our site operates, however you will not be able to take full advantage of all our features.": "您可以通过设置cookies来限制对您数据的获取，您也可以随时更改或拒绝使用cookies。如果您拒绝使用cookies，不会影响该网页的正常工作，但您无法充分利用我们提供的功能。",
     "for more information, consult our": "需要获取更多相关信息，请访问我们的",
     "set cookies": "设置cookies",
     "i refuse cookies": "我拒绝使用cookies",
     "i accept cookies": "我同意使用cookies",
     "welcome citizen, to the official rsi issue council": "公民，欢迎您来到官方RSI问题理事会",
-    "the issue council is a community-driven tool that allows players to report bugs they encounter": {
-        " cig developers use your contributions to investigate problems and prioritize fixes": {
-            "": "问题理事会是一个靠社区驱动的网站，玩家在这里汇报在游戏中遇到的bug。CIG的开发人员将会借助这里的问题来调查bug并讨论修复优先级。"
-        }
-    },
+    "the issue council is a community-driven tool that allows players to report bugs they encounter. cig developers use your contributions to investigate problems and prioritize fixes.": "问题理事会是一个靠社区驱动的网站，玩家在这里汇报在游戏中遇到的bug。CIG的开发人员将会借助这里的问题来调查bug并讨论修复优先级。",
     "how do i report bugs using the issue council?": "我要如何在问题理事会中汇报bug？",
     "select a project": "选择一个项目",
-    "no projects available": {
-        "": "无可用项目"
-    },
-    "sign in to your rsi account to see the projects that you have access to": {
-        "": "登录你的RSI账户以查看你可访问的项目。"
-    },
+    "no projects available.": "无可用项目",
+    "sign in to your rsi account to see the projects that you have access to.": "登录你的RSI账户以查看你可访问的项目。",
     "contribute to the development of star citizen": "为星际公民的开发提供帮助",
     "search to contribute to an existing issue, or": "搜索现有的问题，或",
     "report a new issue": "报告一个新的问题",
@@ -2207,24 +2184,19 @@
     "critical": "极其严重",
     "gamebreaking issue": "导致游戏无法游玩问题",
     "what’s your setup?": "你的设备是什么样的？",
-    "this information gives our team vital context and helps us to reproduce the issue": {
-        "": "这些信息为我们提供重要的背景条件，以便我们复现该问题。"
-    },
+    "this information gives our team vital context and helps us to reproduce the issue.": "这些信息为我们提供重要的背景条件，以便我们复现该问题。",
     "my device": "我的设备",
     "compatible devices": "兼容的设备",
     "enter your device configuration": "输入你的设备的配置",
     "save time by uploading you dxdiag file,": "您可以上传你的Dxdiag文件，这样节省时间，",
-    "click here to learn how to find it": {
-        "": "点击这里查看如何找到该文件。"
-    },
+    "click here to learn how to find it.": "点击这里查看如何找到该文件。",
     "be sure you read the": "请确保您已经阅读过",
+    "privacy policy.": "隐私条款。",
     "this is my device": "这是我的设备",
     "upload a dxdiag file": "上传DxDiag文件",
     "enter configuration manually": "手动输入配置",
     "device setup": "设备相关设置",
-    "please complete and review the form below": {
-        "": "请查看并填写以下的表格。"
-    },
+    "please complete and review the form below.": "请查看并填写以下的表格。",
     "system": "系统",
     "language": "语言",
     "(optional)": "（选填）",
@@ -2246,29 +2218,22 @@
     "download speed": "下行速度",
     "upload speed": "上行速度",
     "peripherals": "外设",
-    "you can add up to 5 peripherals (joystick, recording device, etc": {
-        ")": "您最多可以添加5个外设（摇杆、录音设备等）"
-    },
+    "you can add up to 5 peripherals (joystick, recording device, etc.)": "您最多可以添加5个外设（摇杆、录音设备等）",
     "device - additional info": "设备 - 其他信息",
     "name your device": "设备名称",
-    "this name will be displayed to you only, to easily select your device when you contribute to an issue": {
-        "": "该名称只有您可见，便于您在为问题做贡献时快速选择您的设备。"
-    },
+    "this name will be displayed to you only, to easily select your device when you contribute to an issue.": "该名称只有您可见，便于您在为问题做贡献时快速选择您的设备。",
+    "add a new device": "添加新设备",
     "game version": "游戏版本",
     "add game version": "添加游戏版本",
     "select your game version": "选择你的游戏版本",
-    "select the version where you experienced this issue": {
-        "": "请选择你遇到该问题时的版本。"
-    },
+    "select the version where you experienced this issue.": "请选择你遇到该问题时的版本。",
     "game environment": "游戏环境",
     "this is my version": "这是我的版本",
     "game settings (optional)": "游戏设置（选填）",
     "add your settings": "添加你的设置",
     "game settings": "游戏设置",
     "something to add?": "还有什么要添加的吗？",
-    "provide anything else that you think will help us fix this": {
-        "": "提供更多你觉得可以帮助我们修复这个问题的内容。"
-    },
+    "provide anything else that you think will help us fix this.": "提供更多你觉得可以帮助我们修复这个问题的内容。",
     "add evidence": "添加依据",
     "you can upload image, text or enter a video url": "你可以上传一个图片，一段文字或输入一个音频的URL",
     "from the reporter": "来自报告者",
@@ -2292,6 +2257,7 @@
     "view all recently fixed issues": "查看全部当前已解决的问题",
     "fixed": "已解决",
     "kudos to:": "感谢：",
+    "loading...": "加载中...",
     "report date": "报告日期",
     "environment": "环境",
     "community severity": "社区严重性",
@@ -2302,53 +2268,31 @@
     "add your device": "添加你的设备",
     "no, i'm not sure": "不，我不确定",
     "cancel your submission?": "取消您的提交？",
-    "are you sure? all information entered will be lost": {
-        "": "你确定吗？所有已填写的信息都会清除。"
-    },
+    "are you sure? all information entered will be lost.": "你确定吗？所有已填写的信息都会清除。",
     "edit your device": "编辑你的设备",
-    "6": {
-        " upload that file to your issue council computer profile": {
-            "": "1、按“Win+R”。2、输入“dxdiag”。3、点击“是(Y)”。4、等待文本文件生成。5、点击“保存所有信息(S)...”保存到电脑里面。6、上传该文件。"
-        }
-    },
+    "6. upload that file to your issue council computer profile.": "1、按“Win+R”。2、输入“dxdiag”。3、点击“是(Y)”。4、等待文本文件生成。5、点击“保存所有信息(S)...”保存到电脑里面。6、上传该文件。",
     "upload": "上传",
     "issue title": "问题标题",
     "what’s your issue?": "你的问题是什么？",
     "possible duplicates": "问题可能重复",
-    "your issue might have been already submitted": {
-        " please, check the list of possible duplicates found": {
-            "": "你的问题可能已经提交过了。请点击列表中可能与你重复的问题。"
-        }
-    },
-    "there are no possible duplicates corresponding to your issue title": {
-        "": "没有找到可能与你问题标题重复的问题。"
-    },
+    "your issue might have been already submitted. please, check the list of possible duplicates found.": "你的问题可能已经提交过了。请点击列表中可能与你重复的问题。",
+    "there are no possible duplicates corresponding to your issue title.": "没有找到可能与你问题标题重复的问题。",
     "looking for possible duplicates…": "正在查找可能重复的问题…",
     "view": "查看",
     "view all duplicates": "查看所有重复问题",
     "i checked these issues": "我检查过这个问题",
     "what's your device?": "你的设备？",
-    "select the device you experienced this issue": {
-        "": "选择你遇到这个问题使用的设备。"
-    },
+    "select the device you experienced this issue.": "选择你遇到这个问题使用的设备。",
     "what are your game settings?": "你的游戏设置？",
-    "add your current settings (optional)": {
-        "": "添加你当前的设置（选填）。"
-    },
+    "add your current settings (optional).": "添加你当前的设置（选填）。",
     "add your game settings": "添加你的游戏设置",
     "i don't know": "我不知道",
     "what's your game version?": "你的游戏版本？",
     "issue category": "问题类别",
-    "select a category for your issue": {
-        "": "为你的问题选择一个类别"
-    },
+    "select a category for your issue.": "为你的问题选择一个类别",
     "persistent universe missions": "持续性宇宙 任务",
     "reputation": "声望",
-    "rsi launcher 1": {
-        "6": {
-            "8": "RSI 启动器 1.6.8"
-        }
-    },
+    "rsi launcher 1.6.8": "RSI 启动器 1.6.8",
     "salvage and repair": "打捞和维修",
     "ship ui": "飞船 UI",
     "ships and vehicles": "飞船和载具",
@@ -2375,56 +2319,32 @@
     "anticheat": "反作弊",
     "ai behavior": "AI行为",
     "how bad is it?": "他有多严重？",
-    "select a severity for your issue": {
-        "": "选择问题的严重性。"
-    },
+    "select a severity for your issue.": "选择问题的严重性。",
     "how did you get there?": "你是如何让这个问题出现的？",
-    "add up to 10 steps to help us reproduce this issue": {
-        "": "最多添加10个步骤来帮助我们复现这个问题。"
-    },
-    "you can add evidence (images, files or video links) at each step": {
-        "": "你可以在每一个步骤中添加依据（图片，文件或视频链接）。"
-    },
+    "add up to 10 steps to help us reproduce this issue.": "最多添加10个步骤来帮助我们复现这个问题。",
+    "you can add evidence (images, files or video links) at each step.": "你可以在每一个步骤中添加依据（图片，文件或视频链接）。",
     "what happened?": "发生了什么？",
-    "describe what went wrong": {
-        "": "描述出现的错误。"
-    },
-    "you can add evidence (images, files or video links) to support your report": {
-        "": "你可以添加依据（图片，文件或视频链接）来支持你的报告。"
-    },
+    "describe what went wrong.": "描述出现的错误。",
+    "you can add evidence (images, files or video links) to support your report.": "你可以添加依据（图片，文件或视频链接）来支持你的报告。",
     "what should have happened?": "本来应该怎样？",
-    "explain the expected behavior": {
-        "": "解释预期行为。"
-    },
+    "explain the expected behavior.": "解释预期行为。",
     "did you find a workaround?": "你找到了解决方法吗？",
-    "optional - how you were able to avoid the issue or correct its effects": {
-        "": "选填 - 你是如何避免或解决这个问题的。"
-    },
+    "optional - how you were able to avoid the issue or correct its effects.": "选填 - 你是如何避免或解决这个问题的。",
     "submit your issue": "提交你的问题",
     "add images or videos": "添加图片或视频",
     "upload a file": "上传文件",
-    "you can upload image (jpg, png or gif) or text (txt, xml, log, ini) files up to 25 mb each": {
-        "": "你可以上传图片（jpg, png, gif）或文本文件（txt, xml, log, ini）每个文件大小不能超过25MB。"
-    },
+    "you can upload image (jpg, png or gif) or text (txt, xml, log, ini) files up to 25 mb each.": "你可以上传图片（jpg, png, gif）或文本文件（txt, xml, log, ini）每个文件大小不能超过25MB。",
     "drop your file to start the upload": "拖动文件至此处以开始上传",
     "select a file on your computer": "从你的电脑中选择文件",
     "embed a video": "嵌入视频",
-    "you can enter a youtube or vimeo url": {
-        "": "你可以输入一个 Youtube 或 视频 的URL。"
-    },
-    "enter your url here": {
-        "": "在这里输入你的URL。"
-    },
+    "you can enter a youtube or vimeo url.": "你可以输入一个 Youtube 或 视频 的URL。",
+    "enter your url here.": "在这里输入你的URL。",
     "add video": "添加视频",
     "report new issue": "报告新的问题",
-    "this information will be saved for your next issue or contribution, please be sure to edit it if your settings change": {
-        "": "这些信息将会一直保存，在你下一次报告问题或贡献时，请确认你的设置是否已经发生改变。"
-    },
+    "this information will be saved for your next issue or contribution, please be sure to edit it if your settings change.": "这些信息将会一直保存，在你下一次报告问题或贡献时，请确认你的设置是否已经发生改变。",
     "display resolution": "显示分辨率",
     "storage type": "硬盘类型",
-    "copy-paste content from the attributes file (user\\client\\0\\profiles\\default\\attributes": {
-        "xml)": "将Attributes文件的文本 复制-粘贴 到此处（USER\\Client\\0\\Profiles\\default\\attributes.xml）"
-    },
+    "copy-paste content from the attributes file (user\\client\\0\\profiles\\default\\attributes.xml)": "将Attributes文件的文本 复制-粘贴 到此处（USER\\Client\\0\\Profiles\\default\\attributes.xml）",
     "cancel your issue report?": "取消报告问题？",
     "notifications": "通知",
     "mark as read": "标记为已读",
@@ -2452,10 +2372,9 @@
     "18 reproductions required to confirm": "18次复现 待确认",
     "19 reproductions required to confirm": "19次复现 待确认",
     "20 reproductions required to confirm": "20次复现 待确认",
-    "are you sure? the complete information content will be lost": {
-        "": "你确定吗？已填写的信息都会清除。"
-    },
+    "are you sure? the complete information content will be lost.": "你确定吗？已填写的信息都会清除。",
     "category": "类别",
+    "game version": "游戏版本"
     "starter pack": "新手包",
     "starter package": "新手包"
 }
