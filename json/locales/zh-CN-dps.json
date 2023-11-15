@@ -1446,7 +1446,6 @@
     "The VariPuck fits between your weapon and the ship hardpoint to transform a fixed weapon mount into a gimballed mount, allowing the pilot to independently aim their weapon’s fire. VariPucks will accept any weapon one size smaller than the hardpoint it is mounting to.": "VariPuck安装在武器和飞船节点之间，将固定武器支架转化为可调节支架，使飞行员能够独立瞄准他们的武器开火。VariPucks可以容纳比其所安装的节点小一个规格的任何武器。",
     "This nose turret was designed specifically for Anvil's F7C Hornet to allow for mounting two Size-1 weapons and precise gimbaled tracking of targets.": "这个机头炮塔是专为铁砧的F7C大黄蜂设计的，允许安装两门S1武器，并实现精确的万向跟踪目标。",
     "This remote turret provides mounts for two Size 2 weapons, an expansive field of fire, and precise control to give F8C pilots a comprehensive weapon system to get out of any situation.": "这个遥控炮塔提供了两个S2武器的底座，广泛的火力范围和精确的控制，为F8C飞行员提供了一个全面的武器系统，以应对任何情况。",
-    "item_DescBEHR_PC2_Dual_S4,P=PC2 Dual S4 Mount": "",
     "item_DescCNOU_Mustang_Nose_Turret,P=Consolidated Outland Mustang Nose Turret": "",
     "item_DescDRAK_Dual_S1,P=Drake Caterpillar Weapon Mount": "",
     "item_DescORIG_85X_Turret,P=Origin Jumpworks 85X Remote Turret": "",
