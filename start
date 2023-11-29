@@ -2,9 +2,10 @@
   "name": "json-service",
   "version": "1.0.0",
   "scripts": {
-    "start": "python3.8 script.py && node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
+    "python":"3.10"
   }
 }
