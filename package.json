@@ -2,14 +2,11 @@
   "name": "json-service",
   "version": "1.0.0",
   "description": "A simple service to provide JSON data",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
-  "engines": {
-    "node": "14.x"
-  }
 }
