@@ -28,7 +28,7 @@ jobs:
         changed_files="${{ steps.getfile.outputs.files }}"
         temp_file=$(mktemp)
     
-        cp json/versions.json $temp_file
+        cp json/locales/versions.json $temp_file
     
         # Use jq and increment_version function to bump version numbers based on changed files
         if echo "$changed_files" | grep -q "addresses.json"; then
